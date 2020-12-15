@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Satisfy&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    /*CONFIGURAÇÃO DA PAGINA*/
+}
+
+body {
+    /*cor da pagina*/
+    background-color: #314462;
+    /*cor da fonte*/
+    color: white;
+}
+
+.container {
+    /*background-color: white;*/
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.container a {
+    margin-right: 3px;
+}
+
+
+/*APARENCIA DA PAGINA*/
+
+header h1 {
+    font-family: 'Satisfy', cursive;
+}
+
+
+/*CABEÇALHO*/
+
+.social {
+    font-size: 39px;
+    text-align: right;
+    background-color: rgb(27, 27, 27);
+    border-bottom: 5px solid white;
+}
+
+.social a {
+    color: white;
+    /*margin-left:5px;*/
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: darkblue;
+}
+
+
+/*header{
+  
+  padding: 3px 0;
+}*/
+
+header img {
+    padding-top: 5px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+
+/*MENU SUPERIOR*/
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    height: 35px;
+}
+
+nav a:hover {
+    color: rgb(204, 204, 204);
+    background-color: rgba(13, 13, 41, 0.671);
+}
+
+nav .container {
+    border-bottom: 2px solid white
+}
+
+
+/*RODAPÉ SUPERIOR*/
+
+.rodape-sup {
+    background-color: rgb(46, 46, 46);
+    min-height: 250px;
+    margin-top: 20px;
+}
+
+.rodape-sup .container {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.rodape-item .h4 {
+    color: rgb(75, 5, 105);
+}
+
+.rodape-item img {
+    padding-top: 30px;
+}
+
+.rodape-item .subtitulo {
+    font-size: tahoma;
+    font-weight: bold;
+}
+
+.hr {
+    color: dodgerblue;
+    font-size: tahoma;
+    font-weight: bold;
+}
+
+.social-rodape {
+    font-size: 39px;
+    text-align: right;
+}
+
+.social-rodape {
+    color: rgb(28, 119, 209);
+    text-decoration: none;
+}
+
+.social-rodape :hover {
+    color: white;
+}
+
+.email {
+    color: rgb(35, 133, 231);
+}
+
+
+/*RODAPÉ INFERIOR*/
+
+.rodape-inf {
+    color: white;
+    background-color: rgb(27, 27, 27);
+    font-size: 18px;
+    padding: 10px;
+}
+
+.rodape-inf a {
+    color: rgb(155, 155, 155);
+}
+
+form label {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    border: dodgerblue;
+    border-radius: 40px;
+}
+
+
+/*CONTEUDO*/
+
+.container2 {
+    /*background-color: white;*/
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.login-box h1 {
+    color: rgb(27, 27, 27);
+    float: left;
+    font-size: 30px;
+    border-bottom: 4px solid rgb(27, 27, 27);
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+.textbox i {
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-size: 18px;
+    width: 80px;
+    margin: 0 10px;
+}
+
+.submit {
+    width: 100%;
+    background: rgb(27, 27, 27);
+    border: 4px solid rgb(27, 27, 27);
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+}
+
+
+/* == Professores == */
+
+.professores {
+    background-color: gray;
+    border: 4px solid mintcream;
+    min-height: 400px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 90px;
+}
+
+.professores .prof-item {
+    background-color: rgb(27, 27, 27);
+    height: 350px;
+    margin-bottom: 100px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.professores .prof-item h3 {
+    color: rgb(255, 255, 255);
+    font-family: tahoma;
+    font-size: 20px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+
+.professores .prof-item h4 {
+    color: white;
+    font-family: tahoma;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.foto-flex {
+    margin-bottom: 10px;
+    padding-left: 22%;
+}
+
+.prof-item .foto {
+    height: 170px;
+    right: 170px;
+    margin: -90px auto 0 auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.prof-item .foto img {
+    margin-top: 0px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.professores a {
+    color: darkturquoise;
+}
+
+
+/*CURSOS*/
+
+.list {
+    margin-bottom: 10px;
+}
+
+.list li {
+    font-size: 23px;
+    color: black;
+}
+
+.cursos {
+    min-height: 350px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+}
+
+.cursos a {
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 22px;
+    border-radius: 5px;
+    color: mintcream;
+    background-color: rgb(27, 27, 27);
+    padding-bottom: 5px;
+    justify-content: center;
+}
+
+.cursos a :hover {
+    color: rgb(255, 255, 255);
+}
+
+
+/*HOME*/
+
+.noticias {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    justify-content: center;
+}
+
+.noticias p {
+    margin-top: 10px;
+    color: black;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.convocados {
+    margin-left: 25%;
+    margin-bottom: 18px;
+}
+
+
+/*QUEM SOMOS*/
+
+.quem-somos p {
+    margin-top: 10px;
+    color: black;
+    font-size: 18px;
+    padding: 12px;
+}
+
+.eu {
+    max-width: 700px;
+    background-color: rgb(27, 27, 27);
+    border: 4px solid mintcream;
+    margin-top: 100px;
+    margin-left: 14%;
+    height: 600px;
+}
+
+.eu .foto img {
+    height: 210px;
+    right: 200px;
+    margin: -90px auto 0 auto;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: 40%;
+}
+
+.eu h3 {
+    padding-left: 22px;
+    font-size: 22px;
+    font-family: tahoma;
+}
+
+.eu h4 {
+    padding-left: 12px;
+    font-size: 19px;
+}
+
+.eu a {
+    color: darkturquoise;
+}
+
+
+/*@media(max-width: 640px) {
+    nav a {
+        display: block;
+        margin-bottom: 4px;
+        background-color: #e4d3d4;
+        padding: 8px;
+        margin-right: 0;
+    }
+}*/
